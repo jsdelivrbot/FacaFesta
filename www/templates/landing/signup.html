@@ -1,0 +1,47 @@
+<ion-pane>
+  <ion-content scroll="false" class="landing-bg">
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="col col-center">
+        <div class="logo text-center">
+          <img src="img/logo.png" style="height: 249px">
+        </div>
+        <div class="row">
+          <div class="col col-80 col-offset-10">
+            <div class="list list-inset" style="margin: 10px 0 0 0">
+              <label class="item item-input">
+                <input type="text" placeholder="Nome Completo" ng-model="user.fullname">
+              </label>
+            </div>
+            <div class="list list-inset" style="margin: 10px 0 0 0">
+              <label class="item item-input">
+                <input type="text" placeholder="Email" ng-model="user.email">
+              </label>
+            </div>
+            <!-- <div class="list list-inset" style="margin: 10px 0 0 0">
+              <label class="item item-input">
+                <input type="text" placeholder="CPF">
+              </label>
+            </div> -->
+            <div class="list list-inset" style="margin: 10px 0 0 0">
+              <label class="item item-input">
+                <input type="password" placeholder="Senha" ng-model="user.password">
+              </label>
+              <label class="item item-input">
+                <input type="password" placeholder="Confirme sua senha" ng-model="user.confirmedPassword">
+              </label>
+            </div>
+            <button class="button button-positive button-block" ng-disabled="user.password != user.confirmedPassword || user.password == '' || user.confirmedPassword == ''" ng-click="signup()">
+              Cadastrar e entrar
+            </button>
+            <button class="button button-clear button-positive button-block" ui-sref="auth.landing">
+              <i class="icon ion-ios-undo"></i> Voltar ao início
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-pane>

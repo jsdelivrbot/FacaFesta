@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    
+  </head>
+
+  <body ng-app="FacaFestaApp">
+    <div id="fb-root"></div>
+    <div ui-view=""></div>
+  </body>
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+  <script src="cordova.js"></script>  
+  <script src="lib/facebook-connect-plugin/index.js"></script>
+  <script src="lib/firebase/firebase.js"></script>
+  <script src="lib/angularfire/dist/angularfire.min.js"></script>
+
+
+  <script src="js/app.js"></script>
+  <script src="js/config/runners.js"></script>
+  <script src="js/config/routes.js"></script>
+  <script src="js/config/facebook.js"></script>
+  <script src="js/services/authentication/auth.js"></script>
+  <script src="js/controllers/landing/landing.controller.js"></script>
+  <script src="js/controllers/auth/signin.controller.js"></script>
+  <script src="js/controllers/auth/signup.controller.js"></script>
+  <script src="js/controllers/auth/complete-profile.controller.js"></script>
+  <script src="js/controllers/home/home.controller.js"></script>
+  <script src="js/controllers.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBVe8SXhcPuIHZRWFXk2ZcJIOniPwnHHb0",
+      authDomain: "festapp-c5594.firebaseapp.com",
+      databaseURL: "https://festapp-c5594.firebaseio.com",
+      storageBucket: "festapp-c5594.appspot.com",
+      messagingSenderId: "549652338156"
+    };
+    firebase.initializeApp(config);
+  </script>
+</html>

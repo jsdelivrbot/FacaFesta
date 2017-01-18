@@ -1,0 +1,12 @@
+{
+  "name": "FacaFesta",
+  "app_id": "642eea13",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

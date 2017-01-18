@@ -1,0 +1,40 @@
+<ion-pane>
+  <ion-content scroll="false" class="landing-bg">
+    <div class="row">
+      <div class="col">&nbsp;</div>
+    </div>
+    <div class="row">
+      <div class="col col-center">
+        <div class="logo text-center">
+          <img src="img/logo.png" style="height: 349px">
+        </div>
+        <form role="form" name="LoginForm">
+          <fieldset style="margin: 0; padding: 0; border: none">
+            <div class="row">
+                  <div class="col col-80 col-offset-10">
+                    <div class="list list-inset" style="margin:0">
+                      <label class="item item-input">
+                        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                        <input type="text" placeholder="Digite seu email..." ng-model="user.email" required>
+                      </label>
+                    </div>
+                    <div class="list list-inset" style="margin: 10px 0 0 0">
+                      <label class="item item-input">
+                        <i class="icon ion-ios-locked-outline placeholder-icon"></i>
+                        <input type="password" ng-model="user.password" required>
+                      </label>
+                    </div>
+                    <button class="button button-positive button-block" ng-disabled="LoginForm.$invalid" ng-click="login()">
+                      Entrar
+                    </button>
+                    <button class="button button-clear button-positive button-block" ui-sref="auth.landing">
+                      <i class="icon ion-ios-undo"></i> Voltar ao início
+                    </button>
+                  </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </ion-content>
+</ion-pane>
