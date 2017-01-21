@@ -1,1 +1,5 @@
-angular.module('FacaFestaApp',['ionic','firebase','ngCordova'])
+angular.module('FacaFestaApp',[
+  'ionic',
+  'firebase',
+  'ngCordova'
+])

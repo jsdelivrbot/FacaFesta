@@ -19,7 +19,19 @@ angular.module('FacaFestaApp')
         );
       }
 
-    }]);
+      // $scope.getAllProducts = function(){
+      //   woocommerce.products().then(
+      //     function(res){
+      //       console.log(res)
+      //     },
+      //     function(err){
+      //       console.log(err)
+      //     }
+      //   );
+      // }();
+
+    }
+  ])
 
 
 

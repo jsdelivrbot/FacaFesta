@@ -10,4 +10,5 @@ angular.module('FacaFestaApp')
       ionic.Platform.ready(function () {
         facebookConnectPlugin.browserInit(appID, appVersion);
       });
-  }]);
+    }
+  ]);
