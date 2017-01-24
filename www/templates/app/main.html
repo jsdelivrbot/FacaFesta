@@ -1,14 +1,14 @@
 <ion-content overflow-scroll="true">
   <div class="row row-no-padding" ng-class="{'opened-menu': menuOpen}">
-    <div id="nav-icon4" class="button-sidemenu" ng-click="openMenu()" ng-class="{'open': menuOpen}">
+    <div id="nav-icon4" class="button-sidemenu" on-tap="openMenu()" ng-class="{'open': menuOpen}">
       <span></span>
       <span></span>
       <span></span>
     </div>
-    <div ui-view=""></div>
+    <div ui-view="" class="main-view"></div>
     <div class="sidemenu">
       <ul class="main-nav">
-        <li><a href="#">Meus Dados</a></li>
+        <li><a ui-sref="app.user-profile({uuidUser: userData.uid})">Meus Dados</a></li>
         <li><a href="#">Meus Pedidos</a></li>
         <li><a href="#">Bolos</a></li>
         <li><a href="#">Doces</a></li>
@@ -26,4 +26,5 @@
       </ul>
     </div>
   </div>
+<pre></pre>
 </ion-content>

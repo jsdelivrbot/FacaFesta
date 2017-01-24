@@ -1,5 +1,6 @@
 .landing-bg {
-  background: url('../img/landing-bg.jpg');
+  background: url('../img/landing-bg.jpg') 0px center;
+  background-size: cover;
 }
 .col-no-padding {
   padding: 0 !important;
@@ -14,6 +15,16 @@
   padding: 0;
   margin: 0;
   background: url('../img/header-open-background.jpg') top center;
+  background-size: cover;
+}
+
+.mini-header {
+  width: 100%;
+  height: 67px;
+  padding: 0;
+  margin: 0;
+  background: url('../img/landing-bg.jpg') top center;
+  background-size: cover;
 }
 
 .button-circle {
@@ -74,5 +85,8 @@
     color: #fff;
     text-align: center;
     padding-top: 46px;
+  }
+  img {
+    width: 100%;
   }
 }

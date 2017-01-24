@@ -4,7 +4,10 @@ angular.module('FacaFestaApp')
   .controller('MainController', [
     '$state',
     '$scope',
-    function ($state, $scope) {
+    'user',
+    function ($state, $scope, user) {
+      
+      $scope.userData = user;
       
       $scope.menuOpen = false;
 

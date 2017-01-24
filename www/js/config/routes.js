@@ -32,7 +32,13 @@ angular.module('FacaFestaApp')
 
       .state('app', {
         url: '/app',
+        abstract: true,
         templateUrl: 'templates/app/main.html',
+        resolve: {
+          user: function (firebase) {
+            return firebase.auth().currentUser;
+          }
+        },
         controller: 'MainController'
       })
 
@@ -40,6 +46,11 @@ angular.module('FacaFestaApp')
         url: '/home',
         templateUrl: 'templates/app/home.html',
         controller: 'HomeController'
+      })
+      .state('app.user-profile',{
+        url: '/profile/:uuidUser',
+        templateUrl: 'templates/app/user-profile.html',
+        controller: 'ProfileController'
       })
 
       .state('app.browse', {
