@@ -10,6 +10,7 @@
     "ionic-social-buttons": "^1.1.1",
     "ngCordova": "^0.1.27-alpha",
     "facebook-connect-plugin": "https://cdn.rawgit.com/Wizcorp/phonegap-facebook-plugin/master/facebookConnectPlugin.js",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "bootstrap": "^3.3.7"
   }
 }

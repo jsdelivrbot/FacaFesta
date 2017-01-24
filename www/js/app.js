@@ -1,5 +1,6 @@
 angular.module('FacaFestaApp',[
   'ionic',
   'firebase',
-  'ngCordova'
+  'ngCordova',
+  'ngToast'
 ])
