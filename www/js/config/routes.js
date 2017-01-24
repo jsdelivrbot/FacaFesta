@@ -32,7 +32,8 @@ angular.module('FacaFestaApp')
 
       .state('app', {
         url: '/app',
-        template: '<div ui-view=""></div>'
+        templateUrl: 'templates/app/main.html',
+        controller: 'MainController'
       })
 
       .state('app.home', {

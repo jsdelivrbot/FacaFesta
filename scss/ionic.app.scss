@@ -21,24 +21,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 @import "www/lib/ionic-social-buttons/ionic-social-buttons.scss";
+@import "www/lib/font-awesome/scss/font-awesome.scss";
 
-.landing-bg {
-  background: url('../img/landing-bg.jpg');
-}
-
-.header-open {
-  border: 1px solid #000;
-  width: 100%;
-  height: 328px;
-  padding: 0;
-}
-.header-open:parent {
-  padding: 0;
-}
-.button-circle {
-  border-radius: 50%;
-}
-
-.button-add-order {
-  align-self: flex-end;
-}
+@import "app";
+@import "sidemenu";
