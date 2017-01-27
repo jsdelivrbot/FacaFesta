@@ -6,14 +6,140 @@
       </div>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-      <ion-content scroll="true" style="margin-top: 87px">
-        <div class="col-33 col-offset-33">
-          <img src="http://placehold.it/128pxx128px" alt="" class="img-circle">
-          <h3>Olá</h3>
+      <ion-content scroll="true" class="profile-page">
+        <div class="header-profile">
+          <div class="row row-no-padding">
+            <div class="col col-no-padding">
+              <div class="col-33 col-offset-33">
+                <div class="user-profile-picture-holder">
+                  <img src="img/user.png" alt="" class="img-circle">
+                  <button class="button button-positive button-add-picture">
+                    <i class="fa fa-camera"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="col col-80 col-offset-10">
+                <h3>Olá {{userData.displayName}} <small>Edite seus dados abaixo</small></h3>
+              </div>
+              <!-- <div class="info-line">
+                <ul>
+                  <li>
+                    <i class="fa fa-cog"></i>
+                    Festas
+                  </li>
+                  <li>
+                    <i class="fa fa-file"></i>
+                    Pedidos
+                  </li>
+                  <li>
+                    <i class="fa fa-truck"></i>
+                    Entregas
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="form-content">
+          <div class="row">
+            <div class="col">
+              <form role="form" name="userProfile">
+                <fieldset>
+
+                  <div class="col">
+                    <div class="list list-inset" style="margin:10px 0">
+                      <label class="item item-input">
+                        <i class="icon ion-ios-person-outline placeholder-icon"></i>
+                        <input type="text" placeholder="Nome completo" ng-model="user.full_name" required>
+                      </label>
+                    </div>
+                    <div class="list list-inset" style="margin:0">
+                      <label class="item item-input">
+                        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                        <input type="text" placeholder="Digite seu CPF" ng-model="user.document_id" required ui-br-cpf-mask>
+                      </label>
+                    </div>
+                    <div class="row row-no-padding">
+                      <div class="input-group">
+                        <div class="col-66 col-no-padding">
+                          <div class="list list-inset" style="margin:10px 0">
+                            <label class="item item-input">
+                              <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                              <input type="text" placeholder="Digite seu CEP" ng-model="user.postal_code" required ui-br-cep-mask>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-33">
+                          <button class="button button-block button-positive" ng-click="searchAddressInformation(user.postal_code)">
+                            <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list list-inset" style="margin:0">
+                      <label class="item item-input">
+                        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                        <input type="text" placeholder="Logradouro (ex: rua, avenida...)" ng-model="user.address" required>
+                      </label>
+                    </div>
+                    <div class="row row-no-padding" style="margin:10px 0">
+                      <div class="col-33">
+                        <div class="list list-inset" style="margin:0">
+                          <label class="item item-input">
+                            <input type="number" placeholder="Nº" ng-model="user.number" required>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-67">
+                        <div class="list list-inset" style="margin:0">
+                          <label class="item item-input">
+                            <input type="text" placeholder="Complemento" ng-model="user.extra_info">
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list list-inset" style="margin:0">
+                      <label class="item item-input">
+                        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                        <input type="text" placeholder="Bairro" ng-model="user.neighbour" required>
+                      </label>
+                    </div>
+                    <div class="row row-no-padding" style="margin:10px 0">
+                      <div class="col-67">
+                        <div class="list list-inset" style="margin:0">
+                          <label class="item item-input">
+                            <input type="text" placeholder="Cidade:" ng-model="user.city" required>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-33">
+                        <div class="list list-inset" style="margin:0">
+                          <label class="item item-input">
+                            <input type="text" placeholder="UF" ng-model="user.state" required> 
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list list-inset" style="margin:10px 0">
+                      <label class="item item-input">
+                        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                        <input type="email" placeholder="Email:" ng-model="user.email" required>
+                      </label>
+                    </div>
+                    <div class="list list-inset" style="margin:10px 0">
+                      <label class="item item-input">
+                        <i class="icon ion-ios-email-outline placeholder-icon"></i>
+                        <input type="text" placeholder="Telefone" ng-model="user.telephone" required ui-br-phone-number>
+                      </label>
+                    </div>
+                    <button class="button button-positive button-block" ng-disabled="userProfile.$invalid" ng-click="save()">
+                      <i class="fa fa-save"></i> Salvar
+                    </button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
         </div>
       </ion-content>
-    </div>
-  </div>
 </ion-content>

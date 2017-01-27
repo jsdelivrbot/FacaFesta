@@ -16854,7 +16854,7 @@ a.button {
     padding: 10px; }
     .sidemenu .main-nav li,
     .sidemenu .section-nav li {
-      margin: 25px 0; }
+      margin: 15px 0; }
     .sidemenu .main-nav a,
     .sidemenu .section-nav a {
       text-decoration: none;
@@ -16955,3 +16955,118 @@ a.button {
   transform: rotate(-45deg);
   top: 38px;
   left: 10px; }
+
+@media (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .header-open {
+    width: 100%;
+    height: 328px;
+    padding: 0;
+    margin: 0;
+    background: url(../img/header-open-background.jpg) top center;
+    background-size: cover; }
+  /*.list-featured-user-home {
+    width: 100%;
+    .item.item-avatar {
+      padding-top: 40px;
+      img {
+        margin-top: 25px;
+        top: 6px;
+        left: 6px;
+        max-width: 50px;
+        max-height: 50px;
+      }
+      h2 {
+        font-size: 14px;
+      }
+      p {
+        font-size: 11px;
+        margin-left: 0px;
+      }
+    }
+  } */ }
+
+@media (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .header-open {
+    width: 100%;
+    height: 328px;
+    padding: 0;
+    margin: 0;
+    background: url(../img/header-open-background.jpg) top center;
+    background-size: cover; } }
+
+@media (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .header-open {
+    width: 100%;
+    height: 398px;
+    padding: 0;
+    margin: 0;
+    background: url(../img/header-open-background.jpg) top center;
+    background-size: cover; }
+  .button-add-order {
+    margin: 70px auto !important;
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    position: absolute;
+    top: 284px;
+    right: 50%;
+    margin-right: -39px !important; } }
+
+.profile-page {
+  margin-top: 66px; }
+  .profile-page .header-profile {
+    background-color: #b4a98b;
+    height: 220px;
+    padding-top: 20px; }
+    .profile-page .header-profile .user-profile-picture-holder {
+      position: relative; }
+      .profile-page .header-profile .user-profile-picture-holder .button-add-picture {
+        border-radius: 50%;
+        position: absolute;
+        bottom: 10px;
+        right: -20px; }
+    .profile-page .header-profile .info-line {
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.25);
+      color: #fff;
+      font-weight: lighter;
+      height: 62px;
+      margin-top: 5px; }
+      .profile-page .header-profile .info-line ul {
+        padding: 0 40px; }
+        .profile-page .header-profile .info-line ul li {
+          width: 33%;
+          float: left;
+          text-align: center; }
+    .profile-page .header-profile h3 {
+      width: 100%;
+      font-weight: lighter !important;
+      display: inline-block;
+      text-align: center;
+      line-height: 18px;
+      margin-top: 8px; }
+      .profile-page .header-profile h3 small {
+        width: 100%;
+        display: inline-block;
+        font-weight: normal;
+        text-align: center; }
+
+.form-content fieldset {
+  border: none; }
+
+input[disabled="disabled"] {
+  background-color: #fff;
+  text-decoration: overline; }
+
+.input-group {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  display: inherit; }
+  .input-group input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0; }
+  .input-group button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }

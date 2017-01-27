@@ -1,0 +1,73 @@
+.profile-page {
+  margin-top: 66px;
+  .header-profile {
+    background-color: #b4a98b;
+    height: 220px;
+    padding-top: 20px;
+    .user-profile-picture-holder {
+      position: relative;
+      .button-add-picture {
+        border-radius: 50%;
+        position: absolute;
+        bottom: 10px;
+        right: -20px;
+      }
+    }
+    .info-line {
+      width: 100%;
+      background-color: rgba(0,0,0,.25);
+      color: #fff;
+      font-weight: lighter;
+      height: 62px;
+      margin-top: 5px;
+      ul {
+        padding: 0 40px;
+        li {
+          width: 33%;
+          float: left;
+          text-align: center;
+        } 
+      }
+    }
+    h3 {
+      width: 100%;
+      font-weight: lighter !important;
+      display:  inline-block;
+      text-align: center;
+      line-height: 18px;
+      margin-top: 8px;
+      small {
+        width: 100%;
+        display: inline-block;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+  }
+}
+.form-content {
+  fieldset {
+    border: none;
+  }
+}
+
+input[disabled="disabled"] {
+  background-color: #fff;
+  text-decoration: overline; 
+}
+
+.input-group {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  display: inherit;
+  input {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; 
+  }
+}

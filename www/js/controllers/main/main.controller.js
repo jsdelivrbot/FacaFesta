@@ -4,10 +4,12 @@ angular.module('FacaFestaApp')
   .controller('MainController', [
     '$state',
     '$scope',
-    'user',
-    function ($state, $scope, user) {
+    'firebase',
+    function ($state, $scope, firebase) {
       
+      var user = firebase.auth().currentUser;
       $scope.userData = user;
+      console.log(user);
       
       $scope.menuOpen = false;
 
